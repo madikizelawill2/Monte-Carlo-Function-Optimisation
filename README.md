@@ -6,7 +6,7 @@ Monte Carlo methods use random selections in calculations to solve numerical or 
 
 Its recommended to use Linux or Bash to run and download all packages necessary to run this project. Download [java](https://www.java.com/en/) to run this project. 
 
-##Usage
+## Usage
 
 Use the Makefile to compile and run the project. The Makefile will ensure all files are compiled in the correct order. 
 
@@ -16,7 +16,7 @@ Demostrate how to run a make file
 
 ```
 
-##Inputs
+## Inputs
 
 ```bash
 
