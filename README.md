@@ -12,12 +12,24 @@ Use the Makefile to compile and run the project. The Makefile will ensure all fi
 
 ```bash
 
-Demostrate how to run a make file
+make
+make run $(all the inputs here)
 
 ```
 
 ## Inputs
 
+The inputs for this program include
+• rows, columns:  the number of rows and columns in the discrete grid 
+representing the function; 
+• xmin, xmax, ymin, ymax: the boundaries of the  rectangular area for the 
+terrain; 
+• searches density: number of searches per grid point
+
+
 ```bash
+make run rows=## columns=## xmin=## xmax=## ymax=## ymin=## searchDensity=##
 
 ````
+
+The '#' are the place holders for the actual numbers

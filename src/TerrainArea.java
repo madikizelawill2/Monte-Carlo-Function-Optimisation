@@ -1,8 +1,5 @@
-package MonteCarloMini;
 
 import java.lang.Math.*;
-
-import MonteCarloMini.Search.Direction;
 
 public class TerrainArea {
 	
@@ -70,36 +67,36 @@ public class TerrainArea {
 	}
 
 	//work out where to go next - move downhill
-	Direction next_step( int x, int y) {
-		Direction climb_direction =Direction.STAY_HERE;
+	Search.Direction next_step( int x, int y) {
+		Search.Direction climb_direction = Search.Direction.STAY_HERE;
 		int height;
 		int local_min= get_height(x, y);
 		if ( x > 0 ) {
 			height=get_height(x-1, y);
 			if (height<local_min) {
 				local_min=height;
-				climb_direction = Direction.LEFT;
+				climb_direction = Search.Direction.LEFT;
 			}
 		}
 		if ( x < (rows-1) ) {
 			height=get_height(x+1, y);
 			if (height<local_min) {
 				local_min=height;
-				climb_direction = Direction.RIGHT;
+				climb_direction = Search.Direction.RIGHT;
 			}
 		}
 		if ( y > 0 ) {
 			height=get_height(x, y-1);
 			if (height<local_min) {
 				local_min=height;
-				climb_direction = Direction.UP;
+				climb_direction = Search.Direction.UP;
 			}
 		}
 		if ( y < (columns-1) ) {
 			height=get_height(x, y+1);
 			if (height<local_min) {
 				local_min=height;
-				climb_direction = Direction.DOWN;
+				climb_direction = Search.Direction.DOWN;
 			}
 		}
 		return climb_direction;
