@@ -37,7 +37,7 @@ public class Search {
 			switch(next) {
 				case STAY_HERE: return height; //found local valley
 				case LEFT: 
-					pos_row--;
+					pos_row--; 
 					break;
 				case RIGHT:
 					pos_row=pos_row+1;
