@@ -1,31 +1,29 @@
-SRCDIR = src
-BINDIR = bin
-DOCDIR = doc
-
-JC = javac
-JFLAGS = -g -d $(BINDIR) -cp $(BINDIR) -cp $(SRCDIR)
-
-vpath %.java $(SRCDIR)
-vpath %.class $(BINDIR)
-
+JAVAC=/usr/bin/javac
+JAVA=/usr/bin/java
 .SUFFIXES: .java .class
 
-.java.class:	
-	$(JC) $(JFLAGS) $<
-	
-CLASSES = TerrainArea.class \
-	Search.class \
-	MonteCarloMinimization.class \
-	
-classes: $(CLASSES:.java=.class)
 
-doc: $(BINDIR)
-	javadoc -d $(DOCDIR) $(SRCDIR)/*.java
-	
+SRCDIR=src/MonteCarloMini
+BINDIR=bin
+.java.class:
+	$(JAVAC) $< 
+
+$(BINDIR)/%.class:$(SRCDIR)/%.java
+	$(JAVAC) -d $(BINDIR)/ -cp $(BINDIR) -sourcepath $(SRCDIR) $<
+
+
+CLASSES=CommonThreads.class Direction.class TerrainArea.class SearchParallel.class MonteCarloMinimization.class MonteCarloMinimizationParallel.class
+MAIN1 = MonteCarloMinimization.class
+MAIN2 = MonteCarloMinimizationParallel.class
+
+CLASS_FILES=$(CLASSES:%.class=$(BINDIR)/%.class)
+
+default: $(CLASS_FILES)
 clean:
-	$(RM) $(BINDIR)/*.class
-	$(RM) $(SRC)/*.java~
-	$(RM) $(DOCDIR)/*
-	
-run: $(SRCDIR)
-	java -cp $(BINDIR) MonteCarloMinimization $(rows) $(columns) $(xmin) $(xmax) $(ymin) $(ymax) $(searchDensity)
+	rm $(BINDIR)/MonteCarloMini/*.class
+
+runSerial: default
+	java -cp $(BINDIR) MonteCarloMini.MonteCarloMinimization $(ARGS)
+
+runParallel: default
+	java -cp $(BINDIR) MonteCarloMini.MonteCarloMinimizationParallel $(ARGS)
