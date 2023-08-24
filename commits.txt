@@ -1,0 +1,65 @@
+commit 92ded4e9b681d100349d11f8efa0cbf2516a512a
+Author: Will <madikizelawill2@gmail.com>
+Date:   Sun Aug 13 21:58:03 2023 +0200
+
+    final commit
+
+commit 41f0e226f3db417e4d27db090a96b1d5f0d55f0a
+Author: Will <madikizelawill2@gmail.com>
+Date:   Thu Aug 10 21:10:26 2023 +0200
+
+    [ADDED] craeted a parallel JAVA file for the problem
+
+commit 3c6113d146f74508ae5aa0fdc530a501564e4223
+Author: Will <madikizelawill2@gmail.com>
+Date:   Mon Aug 7 21:38:19 2023 +0200
+
+    [UPDATED] the package system of the file design, for easy makefile execution
+
+commit bad25b1cb0e3fff7b4967fbf35ad0f4ecdc5e738
+Author: Will <madikizelawill2@gmail.com>
+Date:   Mon Aug 7 15:41:18 2023 +0200
+
+    [UPDATED] Makefile methods to run the program
+
+commit 1860b6079e91cf236c0e90620237c991203d88dc
+Author: Will <madikizelawill2@gmail.com>
+Date:   Mon Aug 7 15:34:02 2023 +0200
+
+    [ADDED] Makefile for compiling all the java files
+
+commit c031f835aead591f82dbea19c3cc33bd80c3ba40
+Author: Will <madikizelawill2@gmail.com>
+Date:   Mon Aug 7 15:31:52 2023 +0200
+
+    [ADDED] Makefile for compiling all the java files
+
+commit c44c2980d9385223a7ff850c1d466998b1af95b1
+Author: Will Madikizela <63541852+madikizelawill2@users.noreply.github.com>
+Date:   Mon Jul 31 08:50:41 2023 +0200
+
+    Update README.md
+
+commit ed8d849f8f724868024e1d3e6d65d5b2eed3a9b7
+Author: Will Madikizela <63541852+madikizelawill2@users.noreply.github.com>
+Date:   Mon Jul 31 08:50:30 2023 +0200
+
+    Update README.md
+
+commit da8b048fb98fe8d6fc0b4fb64be621ad7f21809e
+Author: Will Madikizela <63541852+madikizelawill2@users.noreply.github.com>
+Date:   Mon Jul 31 08:49:58 2023 +0200
+
+    Update README.md
+
+commit fcbcf50dd24bf10d6bdefd5c30c83cfd5c5c0368
+Author: Will <madikizelawill2@gmail.com>
+Date:   Mon Jul 31 08:13:49 2023 +0200
+
+    [ADDED] src file and bin with sequential solution
+
+commit a29b1eb28b7de528f4ebd225d9e06c0fa57c2e9f
+Author: Will Madikizela <63541852+madikizelawill2@users.noreply.github.com>
+Date:   Sun Jul 30 19:06:44 2023 +0200
+
+    Initial commit

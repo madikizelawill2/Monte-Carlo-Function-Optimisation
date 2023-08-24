@@ -898,3 +898,15 @@ Rows: 9000, Columns: 9000
 Search density: 0,050000 (4050000 searches)
  1529 ms
  
+Rows: 500, Columns: 500
+Search density: 0,050000 (12500 searches)
+ 9 ms
+ 
+Rows: 500, Columns: 500
+Search density: 0,050000 (12500 searches)
+ 10 ms
+ 
+Rows: 500, Columns: 500
+Search density: 0,050000 (12500 searches)
+ 11 ms
+ 

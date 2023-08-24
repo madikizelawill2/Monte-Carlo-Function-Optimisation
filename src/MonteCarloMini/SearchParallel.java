@@ -31,17 +31,6 @@ public class SearchParallel extends RecursiveAction {
 		this.stopped = false;
 	}
 
-	/**
-	 * This is the second constructor for SearchParallel and configures the
-	 * SearchParallel array to be split amongst several threads
-	 * 
-	 * @param arr                 the array of SearchParallel objects
-	 * @param lo                  the lowest index of the array
-	 * @param hi                  the highest index in the array
-	 * @param commonThreads              the ConcurrentLinkedDeque which will be changed
-	 *                            during the compute function
-	 * @param num_SearchParallels the total number of searches
-	 */
 	public SearchParallel(SearchParallel[] arr, int lo, int hi, ConcurrentLinkedDeque<CommonThreads> commonThreads,
 			int num_SearchParallels) {
 		this.arr = arr;
